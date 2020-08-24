@@ -102,7 +102,7 @@ public class tester{
 	static void binarySearchTreeTester()
 	{
 		System.out.println("___________BSTree TESTER _____________________________________________________\n");
-		int[] arr = {6, 4, 2, 1, 9};
+		int[] arr = {6, 4, 6, 2, 1, 9};
 
 		//intilize tree and check a few contained calls
 		BSTree arrTree = new BSTree( arr );
