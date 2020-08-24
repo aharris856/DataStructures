@@ -1,4 +1,5 @@
 public class tester{
+	
 	public static void main(String[]args)
 	{
 		//test linked list method
@@ -8,7 +9,10 @@ public class tester{
 		testCDLL();
 
 		//test queue
-		testQueue();	
+		testQueue();
+
+		//BSTree tester
+		binarySearchTreeTester();	
 		
 
 	}
@@ -93,6 +97,33 @@ public class tester{
 		else System.out.println("Queue is NOT Empty");
 		System.out.println("________________________________________________________END QUEUE\n");
 		//END QUEUE//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	}
+	//BST TESTER ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	static void binarySearchTreeTester()
+	{
+		System.out.println("___________BSTree TESTER _____________________________________________________\n");
+		int[] arr = {6, 4, 2, 1, 9};
+
+		//intilize tree and check a few contained calls
+		BSTree arrTree = new BSTree( arr );
+		System.out.println("tree contains (7, 4, 6, 3)? "+arrTree.contains(7)+" , "+arrTree.contains(4)+" , "+arrTree.contains(6)+" , "+arrTree.contains(3)+"\n");
+		//print tree preorder traversal
+		System.out.println("Tree printed PRE-ORDER traversal: ");
+		arrTree.printPreOrder();
+		//print tree inorder traversal
+		System.out.println("Tree printed IN-ORDER traversal: ");
+		arrTree.printInOrder();
+		//print tree level order traversal
+		System.out.println("Tree Printed LEVEL-ORDER traversal: ");
+		arrTree.printLevelOrder();
+		//print tree post order traversal
+		System.out.println("Tree Printed POST-ORDER traversal: ");
+		arrTree.printPostOrder();
+
+
+		System.out.println("____________________________________________________________________________END BSTree");
+
+		//END BST TESTER///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
 	}
 
 }
