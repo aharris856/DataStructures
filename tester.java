@@ -1,7 +1,20 @@
 public class tester{
 	public static void main(String[]args)
 	{
-		//LINKED LIST TESTER ///////////////////////////////////////////////////////////////////////////////////////////////
+		//test linked list method
+		testLinkedList();
+
+		//test circly doubly linked list
+		testCDLL();
+
+		//test queue
+		testQueue();	
+		
+
+	}
+	//LINKED LIST TESTER ///////////////////////////////////////////////////////////////////////////////////////////////
+	static void testLinkedList()
+	{
 		System.out.println("________________________LINKED LIST TESTER________________________");
 		LinkedList list = new LinkedList();
 
@@ -27,7 +40,10 @@ public class tester{
 		System.out.println("Does list contain 1? "+list.contains(1));
 		System.out.println("__________________________________________________________End LinkedList\n");
 		//END LINKED LIST TESTER ////////////////////////////////////////////////////////////////////////////////////////
-		//CIRCLY DOUBLY LINKED LIST TESTER //////////////////////////////////////////////////////////////////////////////
+	}
+	//CIRCLY DOUBLY LINKED LIST TESTER //////////////////////////////////////////////////////////////////////////////
+	static void testCDLL()
+	{
 		System.out.println("_____________________CDLL TESTER _________________________________");
 
 	    Cdll cdll = new Cdll();
@@ -50,7 +66,11 @@ public class tester{
 	    System.out.println("\n does cdll contain (3, 1, 31)? : "+cdll.contains(3)+" , "+cdll.contains(1)+" , "+cdll.contains(31));
 		System.out.println("__________________________________________________________END CDLL\n");
 		//END CDLL////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		//QUEUE TESTER LIST////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	}
+
+	//QUEUE TESTER LIST////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	static void testQueue()
+	{
 		System.out.println("__________________________QUEUE TESTER_______________________________________\n");
 
 		Queue queue = new Queue(10);
@@ -64,6 +84,7 @@ public class tester{
 		System.out.println("Current front of queue: "+queue.peek()+"  >>> Queue size = "+queue.size());
 		queue.dequeue();
 		System.out.println("Current front after dequeue: "+queue.peek()+" >>> Queue size = "+queue.size());
+		System.out.println("Emptying Queue... ");
 		//empty the queue
 		for(int i = 0; i < 9; i++)
 			queue.dequeue();
@@ -72,7 +93,6 @@ public class tester{
 		else System.out.println("Queue is NOT Empty");
 		System.out.println("________________________________________________________END QUEUE\n");
 		//END QUEUE//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 	}
 
 }
