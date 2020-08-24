@@ -50,6 +50,28 @@ public class tester{
 	    System.out.println("\n does cdll contain (3, 1, 31)? : "+cdll.contains(3)+" , "+cdll.contains(1)+" , "+cdll.contains(31));
 		System.out.println("__________________________________________________________END CDLL\n");
 		//END CDLL////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//QUEUE TESTER LIST////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		System.out.println("__________________________QUEUE TESTER_______________________________________\n");
+
+		Queue queue = new Queue(10);
+		//fill queue with 1 - 10
+		for(int i = 1; i < 11; i++)
+			queue.enqueue(i);
+
+		if(queue.isFull())System.out.println("Queue is Full");
+		else System.out.println("Queue is NOT Full");
+
+		System.out.println("Current front of queue: "+queue.peek()+"  >>> Queue size = "+queue.size());
+		queue.dequeue();
+		System.out.println("Current front after dequeue: "+queue.peek()+" >>> Queue size = "+queue.size());
+		//empty the queue
+		for(int i = 0; i < 9; i++)
+			queue.dequeue();
+
+		if(queue.isEmpty())System.out.println("Queue is Empty");
+		else System.out.println("Queue is NOT Empty");
+		System.out.println("________________________________________________________END QUEUE\n");
+		//END QUEUE//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	}
 
