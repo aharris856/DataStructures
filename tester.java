@@ -25,7 +25,7 @@ public class tester{
 		System.out.println("________________________LINKED LIST TESTER________________________\n");
 		LinkedList list = new LinkedList();
 
-		//insert 0 - 15
+		//insert 0 - 14
 		for(int i = 0; i < 15; i++)
 			list.insert(i);
 		//print list
