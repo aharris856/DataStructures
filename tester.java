@@ -25,11 +25,11 @@ public class tester{
 		System.out.println("________________________LINKED LIST TESTER________________________\n");
 		LinkedList list = new LinkedList();
 
-		//insert 0 - 14
+		//insert 0 - 15
 		for(int i = 0; i < 15; i++)
 			list.insert(i);
 		//print list
-		System.out.println("List after Insertion 0 - 15");
+		System.out.println("List after Insertion 0 - 14");
 		list.print();
 
 		System.out.println("Size of List = "+list.size());
@@ -138,7 +138,10 @@ public class tester{
         //insert input
         for(int i = 0; i < input.length; i++)
         	tr.insert(input[i]);
-       // check if trie contains given strings
+        //print trie after input
+        System.out.println("Trie after input: \n");
+        tr.printLevels();
+       	       // check if trie contains given strings
        System.out.println("Trie contains 'the' ? >>> "+tr.contains("the"));
        System.out.println("Trie contains 'xD' ? >>> "+tr.contains("xD"));
        System.out.println("Trie contains 'The' (caps 't') ? >>> "+tr.contains("The"));
