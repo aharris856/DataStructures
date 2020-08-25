@@ -11,8 +11,11 @@ public class tester{
 		//test queue
 		testQueue();
 
-		//BSTree tester
+		//BSTree tester + Order traversals
 		binarySearchTreeTester();	
+
+		//trie tester
+		trieTester();
 		
 
 	}
@@ -124,6 +127,29 @@ public class tester{
 		System.out.println("____________________________________________________________________________END BSTree");
 
 		//END BST TESTER///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+	}
+	//TRIE TESTER ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	static void trieTester()
+	{
+		Trie tr = new Trie();
+		//vals to input to trie
+		String[] input = {"hi", "i","whats", "the","forgive","swag","lmao","there"};
+        //insert input
+        for(int i = 0; i < input.length; i++)
+        	tr.insert(input[i]);
+       // check if trie contains given strings
+       System.out.println("Trie contains 'the' ? >>> "+tr.contains("the"));
+       System.out.println("Trie contains 'xD' ? >>> "+tr.contains("xD"));
+       System.out.println("Trie contains 'The' (caps 't') ? >>> "+tr.contains("The"));
+       System.out.println("Trie contains 'sw' ? >>> "+tr.contains("sw"));
+       System.out.println("Trie contains 'i' ? >>> "+tr.contains("i"));
+       System.out.println("Trie contains 'swag' ? >>> "+tr.contains("swag")+"\n");
+
+       System.out.println("Deleting 'there' from trie .... ");
+       tr.delete("there"); //delete 'there'
+       System.out.println("Trie contains 'the' ? >>> "+tr.contains("the"));//make sure it didn't delete children
+       System.out.println("Trie contains 'there' ? >>> "+tr.contains("there"));
+	   //END TRIE TESTER////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	}
 
 }
