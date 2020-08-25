@@ -131,6 +131,7 @@ public class tester{
 	//TRIE TESTER ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	static void trieTester()
 	{
+		System.out.println("________________________________TRIE TESTER________________________");
 		Trie tr = new Trie();
 		//vals to input to trie
 		String[] input = {"hi", "i","whats", "the","forgive","swag","lmao","there"};
@@ -149,6 +150,7 @@ public class tester{
        tr.delete("there"); //delete 'there'
        System.out.println("Trie contains 'the' ? >>> "+tr.contains("the"));//make sure it didn't delete children
        System.out.println("Trie contains 'there' ? >>> "+tr.contains("there"));
+       System.out.println("_________________________________________________________________END TRIE TESTER");
 	   //END TRIE TESTER////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	}
 
