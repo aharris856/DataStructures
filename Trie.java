@@ -56,13 +56,10 @@ public class Trie{
 		if(curr.isEnding && !curr.children.isEmpty() && !recurse){//is ending, has not recursed, has children
 			curr.isEnding = false;
 			return;
-		}else if( (curr.children.size() > 1 || curr.isEnding) && recurse){//has recursed, has children OR is an ending
-			return;
-		}
+		}else if( (curr.children.size() > 1 || curr.isEnding) && recurse)return;//has recursed, has children OR is an ending
 		//call delete helper again to recurse and set recurse boolean to true
 		deleteHelper(root, str.substring(0, str.length()-1),true);
 		//remove character at each index post recursion
 		parent.children.remove(str.charAt(str.length()-1));
 	}
-
 }
