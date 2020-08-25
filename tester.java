@@ -1,3 +1,4 @@
+//structure tester class
 public class tester{
 	
 	public static void main(String[]args)
@@ -153,6 +154,11 @@ public class tester{
        tr.delete("there"); //delete 'there'
        System.out.println("Trie contains 'the' ? >>> "+tr.contains("the"));//make sure it didn't delete children
        System.out.println("Trie contains 'there' ? >>> "+tr.contains("there"));
+
+       //print trie fater removal of items
+       System.out.println("Trie after removal: \n");
+       tr.printLevels();
+       
        System.out.println("_________________________________________________________________END TRIE TESTER\n");
 	   //END TRIE TESTER////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	}
