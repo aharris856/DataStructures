@@ -22,7 +22,7 @@ public class tester{
 	//LINKED LIST TESTER ///////////////////////////////////////////////////////////////////////////////////////////////
 	static void testLinkedList()
 	{
-		System.out.println("________________________LINKED LIST TESTER________________________");
+		System.out.println("________________________LINKED LIST TESTER________________________\n");
 		LinkedList list = new LinkedList();
 
 		//insert 0 - 15
@@ -51,7 +51,7 @@ public class tester{
 	//CIRCLY DOUBLY LINKED LIST TESTER //////////////////////////////////////////////////////////////////////////////
 	static void testCDLL()
 	{
-		System.out.println("_____________________CDLL TESTER _________________________________");
+		System.out.println("_____________________CDLL TESTER _________________________________\n");
 
 	    Cdll cdll = new Cdll();
 	    //insert random nodes
@@ -124,14 +124,14 @@ public class tester{
 		arrTree.printPostOrder();
 
 
-		System.out.println("____________________________________________________________________________END BSTree");
+		System.out.println("____________________________________________________________________________END BSTree\n");
 
 		//END BST TESTER///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
 	}
 	//TRIE TESTER ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	static void trieTester()
 	{
-		System.out.println("________________________________TRIE TESTER________________________");
+		System.out.println("________________________________TRIE TESTER_____________________________\n");
 		Trie tr = new Trie();
 		//vals to input to trie
 		String[] input = {"hi", "i","whats", "the","forgive","swag","lmao","there"};
@@ -150,7 +150,7 @@ public class tester{
        tr.delete("there"); //delete 'there'
        System.out.println("Trie contains 'the' ? >>> "+tr.contains("the"));//make sure it didn't delete children
        System.out.println("Trie contains 'there' ? >>> "+tr.contains("there"));
-       System.out.println("_________________________________________________________________END TRIE TESTER");
+       System.out.println("_________________________________________________________________END TRIE TESTER\n");
 	   //END TRIE TESTER////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	}
 
