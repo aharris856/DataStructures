@@ -165,6 +165,7 @@ public class tester{
        System.out.println("_________________________________________________________________END TRIE TESTER\n");
 	   //END TRIE TESTER////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	}
+	//HASH TESTER/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	static void hashTester()
 	{
 		System.out.println("__________________________HASH TABLE TESTER_______________________________________________");
@@ -200,6 +201,7 @@ public class tester{
 		System.out.println();
 		System.out.println("Searching table for whatevs: whatevs.val = "+table.get("whatevs")+"\nSearching table for value not in table: 'yolo'.val = "+table.get("yolo"));
 		System.out.println("________________________________________________________________________________END HASH TESTER\n");
+		//END HASH TESTER ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	}
 
 }
