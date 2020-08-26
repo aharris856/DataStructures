@@ -17,6 +17,9 @@ public class tester{
 
 		//trie tester
 		trieTester();
+
+		//hash tester
+		hashTester();
 		
 
 	}
@@ -161,6 +164,42 @@ public class tester{
        
        System.out.println("_________________________________________________________________END TRIE TESTER\n");
 	   //END TRIE TESTER////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	}
+	static void hashTester()
+	{
+		System.out.println("__________________________HASH TABLE TESTER_______________________________________________");
+		HashTable<String, Integer> table = new HashTable <String, Integer>();
+		//insert 6 values into the table
+		table.insert("swag",0);
+		table.insert("whatevs",2);
+		table.insert("LOL bro wut",1);
+		table.insert("xD",3);
+		table.insert("test test",6);
+		table.insert("xD",4);//one dupe so 5 values really
+		//print table and size of table
+		System.out.println("Table:   >>>> size = "+table.size());
+		table.printTable();
+		System.out.println();
+		//print table after removing key 'xD'
+		System.out.println("Table after removing 'xD':    >>>> size =  "+table.size());
+		table.remove("xD");
+		table.printTable();
+		//push table passed initial max capacity
+		System.out.println();
+		System.out.println("Going to table max size of table... ");
+		table.insert("what it do",1);
+		table.insert("test number swag",19);
+		table.insert("lol", 3);
+		table.insert("idk wut to add lol ",9);
+		table.insert("horse",2);
+		table.insert("hehe",9);
+		table.insert("i got da kewl",21);
+		//print table after capacity maxed out
+		System.out.println("Table after hitting max size:     >>>> size = "+table.size());
+		table.printTable();
+		System.out.println();
+		System.out.println("Searching table for whatevs: whatevs.val = "+table.get("whatevs")+"\nSearching table for value not in table: 'yolo'.val = "+table.get("yolo"));
+		System.out.println("________________________________________________________________________________END HASH TESTER\n");
 	}
 
 }
