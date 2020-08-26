@@ -8,12 +8,12 @@ in the tester file to see how some commands are used!
 
     Planned Structures to have:
 
-    Linked List
-    Circly Doubly Linked List
-    Stack
-    Queue
-    HashTable
-    Binary Tree [Has built in pre-order, in-order, post-order, and level-order print off algorithm]
-    Trie
+    Linked List   [done]
+    Circly Doubly Linked List   [done]
+    Stack   [done]
+    Queue   [done]
+    HashTable   [done]
+    Binary Tree (Has built in pre-order, in-order, post-order, and level-order print off algorithm)   [done]
+    Trie   [done]
     Graph
 
