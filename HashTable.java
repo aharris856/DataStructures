@@ -22,6 +22,7 @@ public class HashTable<K, V>{
 	private int containerSize;
 	//size of arraylist
 	private int size = 0;
+	//constructor
 	public HashTable(){
 		container = new ArrayList<Node<K,V>>();
 		containerSize = 10;
@@ -29,10 +30,13 @@ public class HashTable<K, V>{
 		for(int i = 0; i < containerSize; i++)
 			container.add(null);
 	}
+
 	//get size of table
 	public int size(){ return size; }
+
 	//check if table is empty
 	public boolean isEmpty(){ return (size() == 0); }
+
 	//hashing index
 	private int getHash(K key)
 	{
@@ -40,6 +44,7 @@ public class HashTable<K, V>{
 		int index = Math.abs(hash%containerSize);//get positive val of the has mod container size
 		return index;
 	}
+
 	//remove key
 	public void remove(K key)
 	{
@@ -132,6 +137,7 @@ public class HashTable<K, V>{
 			}
 		}
 	}
+	
 	//print table
 	public void printTable()
 	{
