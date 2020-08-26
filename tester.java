@@ -199,9 +199,11 @@ public class tester{
 		System.out.println("Table after hitting max size:     >>>> size = "+table.size());
 		table.printTable();
 		System.out.println();
-		System.out.println("Searching table for whatevs: whatevs.val = "+table.get("whatevs")+"\nSearching table for value not in table: 'yolo'.val = "+table.get("yolo"));
+		//does the table contain key hehe, print true
+		System.out.println("Does Table contain the key 'hehe'?: "+(table.get("hehe")!=null)+"  >>>   Val for 'hehe' = "+table.get("hehe"));
+		//does table contain key that isn't in thable, print false
+		System.out.println("Does Table contain the key 'key that isn't in the table'?: "+(table.get("key that isn't in the table")!=null));
 		System.out.println("________________________________________________________________________________END HASH TESTER\n");
 		//END HASH TESTER ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	}
-
 }
