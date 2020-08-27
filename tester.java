@@ -219,13 +219,13 @@ public class tester{
 
 		//load arraylist of edges
 		ArrayList<int[]> edges = new ArrayList<int[]>();
-		edges.add(new int[]{0, 1, 6});
-		edges.add(new int[]{2, 0, 5});
-		edges.add(new int[]{3, 2, 10});
-		edges.add(new int[]{5, 4, 3});
-		edges.add(new int[]{1, 2, 7});
-		edges.add(new int[]{2, 1, 4});
-		edges.add(new int[]{4, 5, 1});
+		edges.add(new int[]{0, 2, 8});
+		edges.add(new int[]{2, 7, 6});
+		edges.add(new int[]{5, 5, 5});
+		edges.add(new int[]{3, 4, 3});
+		edges.add(new int[]{2, 2, 1});
+		edges.add(new int[]{1, 1, 3});
+		edges.add(new int[]{4, 4, 9});
 
 		//make graph and add edges to graph
 		Graph g = new Graph(edges);
