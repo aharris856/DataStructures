@@ -15,5 +15,5 @@ in the tester file to see how some commands are used!
     HashTable   [done]
     Binary Tree (Has built in pre-order, in-order, post-order, and level-order print off algorithm)   [done]
     Trie   [done]
-    Graph   [incomplete]
+    Graph   [done]
 
