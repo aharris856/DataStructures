@@ -225,7 +225,7 @@ public class tester{
 		edges.add(new int[]{3, 4, 3});
 		edges.add(new int[]{2, 3, 1});
 		edges.add(new int[]{1, 6, 3});
-		edges.add(new int[]{4, 4, 9});
+		edges.add(new int[]{4, 1, 9});
 
 		//make graph and add edges to graph
 		Graph g = new Graph(edges);
